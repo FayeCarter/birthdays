@@ -11,4 +11,8 @@ describe BirthdayList do
     expect(list.store('Faye Carter', "7 April 1990")).to eq [{ name: 'Faye Carter', birthday: "7 April 1990" }]
   end
 
+  it '#store can store a Birthday' do
+    expect(list.store('John Doe', "1 March 1920")).to eq [{ name: 'John Doe', birthday: "1 March 1920" }]
+  end
+
 end
