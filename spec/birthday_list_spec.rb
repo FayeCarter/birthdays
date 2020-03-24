@@ -3,7 +3,7 @@ require 'birthday_list'
 describe BirthdayList do
   subject(:list) { BirthdayList.new }
 
-  it 'BirthdayList' do
+  it '#store' do
     expect(list).to respond_to(:store).with(2).arguments
   end
 
@@ -14,5 +14,10 @@ describe BirthdayList do
   it '#store can store a Birthday' do
     expect(list.store('John Doe', "1 March 1920")).to eq [{ name: 'John Doe', birthday: "1 March 1920" }]
   end
+
+  it '#list_all' do
+    expect(list).to respond_to(:list_all)
+  end
+
 
 end

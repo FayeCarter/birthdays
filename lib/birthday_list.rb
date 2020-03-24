@@ -4,4 +4,7 @@ class BirthdayList
     [{ name: name, birthday: birthday }]
   end
 
+  def list_all
+
+  end
 end
